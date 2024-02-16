@@ -57,29 +57,39 @@ FIGURE-02
 
 
 FIGURE -03
-
-
-
+![Screenshot 2024-02-16 161141](https://github.com/DIVYADHARSHINI-08/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/145210448/c63b9210-a9ec-4aaf-8a55-35db0e720e58)
 
 ## PROGRAM 
- 
- 
-
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
-
+ ```
+ int led=3;
+int pushbutton=4;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(pushbutton,INPUT);
+}
+void loop()
+{
+  int pb;
+  pb=digitalRead(pushbutton);
+  if(pb==LOW)
+  {
+  digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led,LOW);
+    delay(500);
+  }
+  else
+  {
+  digitalWrite(led,LOW);
+  delay(500);
+  }
+}
+```
 ## OUTPUT OF SIMULATION :
 
-[My image](username.github.com/repository/img/image.jpg)
+OFF CONDITION :
+![Screenshot (13)](https://github.com/DIVYADHARSHINI-08/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/145210448/0e75e1ba-30f2-4d64-8028-86beec2f9046)
+ON CONDITION :
+![Screenshot 2024-02-16 161234](https://github.com/DIVYADHARSHINI-08/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/145210448/16a607d2-478c-4373-945f-5af458376db9)
 
