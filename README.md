@@ -93,3 +93,5 @@ OFF CONDITION :
 ON CONDITION :
 ![Screenshot 2024-02-16 161234](https://github.com/DIVYADHARSHINI-08/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/145210448/16a607d2-478c-4373-945f-5af458376db9)
 
+# RESULT:
+Thus the digital interfacing of circuit using Arduino circuit is completed successfully by tinkercard
